@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-27T08:22:17 CDT" name="Gmail Suite" finished-at="2022-03-27T08:22:40 CDT" duration-ms="23282">
+    <groups>
+    </groups>
+    <test started-at="2022-03-27T08:22:17 CDT" name="Regression" finished-at="2022-03-27T08:22:37 CDT" duration-ms="20502">
+      <class name="checkoutCart.GuestCheckout">
+        <test-method signature="homepageActions()[pri:1, instance:checkoutCart.GuestCheckout@76c3e77a]" started-at="2022-03-27T08:22:17 CDT" name="homepageActions" finished-at="2022-03-27T08:22:20 CDT" duration-ms="3675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepageActions -->
+        <test-method signature="storePageAction()[pri:2, instance:checkoutCart.GuestCheckout@76c3e77a]" started-at="2022-03-27T08:22:20 CDT" name="storePageAction" finished-at="2022-03-27T08:22:37 CDT" duration-ms="16807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storePageAction -->
+      </class> <!-- checkoutCart.GuestCheckout -->
+    </test> <!-- Regression -->
+    <test started-at="2022-03-27T08:22:37 CDT" name="functional" finished-at="2022-03-27T08:22:40 CDT" duration-ms="2767">
+      <class name="checkoutCart.GuestCheckout">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:checkoutCart.GuestCheckout@76c3e77a]" started-at="2022-03-27T08:22:15 CDT" name="startDriver" finished-at="2022-03-27T08:22:17 CDT" duration-ms="1978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="endDriver(org.testng.ITestResult)[pri:0, instance:checkoutCart.GuestCheckout@76c3e77a]" started-at="2022-03-27T08:22:40 CDT" name="endDriver" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1648387360347" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterSuite annotated endDriver.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterSuite annotated endDriver.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:669)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:396)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endDriver -->
+      </class> <!-- checkoutCart.GuestCheckout -->
+      <class name="demov1.BaseTestv">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:demov1.BaseTestv@52af26ee]" started-at="2022-03-27T08:22:37 CDT" name="invokeBrowser" finished-at="2022-03-27T08:22:39 CDT" duration-ms="2106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="verifyTitlepage()[pri:0, instance:demov1.BaseTestv@52af26ee]" started-at="2022-03-27T08:22:39 CDT" name="verifyTitlepage" finished-at="2022-03-27T08:22:39 CDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitlepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demov1.BaseTestv@52af26ee]" started-at="2022-03-27T08:22:39 CDT" name="tearDown" finished-at="2022-03-27T08:22:40 CDT" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- demov1.BaseTestv -->
+    </test> <!-- functional -->
+  </suite> <!-- Gmail Suite -->
+</testng-results>
