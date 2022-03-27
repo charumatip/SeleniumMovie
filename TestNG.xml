@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
+         
+  <test name="Regression">
+  
+	 <classes>
+	   <class name="checkoutCart.GuestCheckout"/>
+	 </classes>
+   </test>
+   
+  <test name="functional">
+     <classes>
+       <class name="demov1.BaseTestv"/>
+     </classes>
+   </test>
+</suite>
+
+
+
+<!-- <suite name="SingleSuite" verbose="2" thread-count="4">
+ 
+  <parameter name="n" value="42" />
+ 
+  <test name="Regression2">
+    <groups>
+      <run>
+        <exclude name="broken" />
+      </run>
+    </groups>
+ 
+    <classes>
+      <class name="test.listeners.ResultEndMillisTest" />
+    </classes>
+  </test>
+</suite> -->
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+	<test name="TestProject">
+		<classes>
+			<class name="package.firstClassName" /> 
+			<class name="package.secondClassName" /> 
+		</classes>	
+	</test> 
+	
+</suite> -->
